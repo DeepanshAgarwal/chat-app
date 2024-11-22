@@ -1,6 +1,7 @@
 import jwt from "jsonwebtoken";
 import User from "../models/user.model.js";
 
+//puts logged in user in req.body
 export const userAuth = async (req, res, next) => {
     try {
         const token = req.cookies.jwt;
